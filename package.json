@@ -9,7 +9,7 @@
     "app-category-type": "public.app-category.productivity",
     "win": {
       "msi": false,
-      "iconUrl": "http://"
+      "iconUrl": "https://raw.githubusercontent.com/unboxedsolutions/ElectronSampleApp/master/build/icon.ico"
     }
   },
   "scripts": {
