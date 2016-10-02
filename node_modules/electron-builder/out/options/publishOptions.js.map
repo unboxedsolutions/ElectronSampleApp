@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "publishOptions.js",
+  "sourceRoot": "",
+  "sources": [
+    "../../src/options/publishOptions.ts"
+  ],
+  "names": [],
+  "mappings": "",
+  "sourcesContent": [
+    "export type PublishProvider = \"github\" | \"bintray\"\n\nexport interface PublishConfiguration {\n  provider: PublishProvider\n}\n\nexport interface GithubPublishConfiguration extends PublishConfiguration {\n  repo: string\n  version: string\n  owner: string\n\n  vPrefixedTagName?: boolean\n}"
+  ]
+}

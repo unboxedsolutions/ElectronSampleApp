@@ -1,0 +1,23 @@
+{
+  "name"    : "SampleApp",
+  "description": "This is a sample application.",
+  "author": "Sean Chase",
+  "version" : "0.1.0",
+  "main"    : "main.js",
+  "build": {
+    "appId": " SampleApp",
+    "app-category-type": "public.app-category.productivity",
+    "win": {
+      "msi": false,
+      "iconUrl": "http://"
+    }
+  },
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron ./app --enable-logging",
+    "dev": "NODE_ENV='development' npm run start",
+    "pack": "build --dir",
+    "dist": "build --x64 --ia32"
+  }
+}
+

@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "api.js",
+  "sourceRoot": "",
+  "sources": [
+    "../../../src/api.ts"
+  ],
+  "names": [],
+  "mappings": "",
+  "sourcesContent": [
+    "export interface VersionInfo {\n  readonly version: string\n}\n\nexport interface FileInfo {\n  name: string\n\n  url: string\n}\n\nexport interface Provider {\n  getLatestVersion(): Promise<VersionInfo>\n\n  getUpdateFile(versionInfo: VersionInfo): Promise<FileInfo>\n}\n\nexport interface UpdateCheckResult {\n  readonly versionInfo: VersionInfo\n  readonly fileInfo?: FileInfo\n\n  readonly downloadPromise?: Promise<any> | null\n}"
+  ]
+}
